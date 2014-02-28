@@ -1,10 +1,6 @@
 //
 //  TextViewSpecialCaseViewController.h
 //  KeyboardTextFieldDemo
-//
-//  Created by Mohd Iftekhar Qurashi on 01/01/14.
-//  Copyright (c) 2014 Canopus. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 
@@ -13,6 +9,7 @@
     IBOutlet UIButton *buttonPop;
     IBOutlet UIButton *buttonPush;
     IBOutlet UIButton *buttonPresent;
+    IBOutlet UIBarButtonItem *barButtonAdjust;
 }
 
 - (IBAction)popClicked:(id)sender;

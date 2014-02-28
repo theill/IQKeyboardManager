@@ -1,10 +1,6 @@
 //
 //  TextViewSpecialCaseViewController.m
 //  KeyboardTextFieldDemo
-//
-//  Created by Mohd Iftekhar Qurashi on 01/01/14.
-//  Copyright (c) 2014 Canopus. All rights reserved.
-//
 
 #import "TextViewSpecialCaseViewController.h"
 #import "IQKeyboardManager.h"
@@ -31,6 +27,15 @@
 {
     [super viewDidLoad];
 
+    if ([[IQKeyboardManager sharedManager] canAdjustTextView])
+    {
+        [barButtonAdjust setTitle:@"Disable Adjust"];
+    }
+    else
+    {
+        [barButtonAdjust setTitle:@"Enable Adjust"];
+    }
+    
     if (!self.navigationController)
     {
         [buttonPop setHidden:YES];
